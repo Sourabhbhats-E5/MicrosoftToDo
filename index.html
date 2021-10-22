@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do</title>
+	<link rel="stylesheet" type="text/css" href="todo.css"></link>
+	<script type="text/javascript" src="todo.js"></script>
+    </head>
+    <body>
+        <div class="container">
+	    <div class="header">
+		<button class="officeButton"><image class="menuImage" src="assets\Menubutton.png"></image></button>
+		<span class="toDo">To Do</span>
+		<div class="search">
+		    <input class="searchBox" placeholder="🔎 Search"/> 
+		</div>
+		<button class="settings"><image class="menuImage" src="assets\settings.png"></image></button>
+		<button class="help"><image class="menuImage" src="assets\question.png"></image></button>
+		<button class="new"><image class="menuImage" src="assets\alarm.png"></image></button>
+		<div class="signOut"><button class="signOutButton">ss</button></div>
+	    </div>
+	    <div class="mainBox">
+	        <div class="menuBox">
+		    <div class="sideBar"><button class="sideBarButton"><</button>
+		    </div>
+		    <div class="myDay"><button class="rightButtons myDayButton" id="day" onclick="myDay()"><image class="sideIcon" src="assets\sun.png"/>My Day</button>
+		    </div>
+		    <div class="important"><button class="rightButtons importantButton" id="clickImportant" onclick="important()"><image class="sideIcon" src="assets\star.png"/>Important</button>
+		    </div>
+		    <div class="planned"><button class="rightButtons plannedButton" onclick="planned()"><image class="sideIcon" src="assets\calendar.png"/>Planned</button>
+		    </div>
+		    <div class="assignedTo"><button class="rightButtons assignedToButton" onclick="assignedToMe()"><image class="sideIcon" src="assets\user.png"/>Assigned to me</button>
+		    </div>
+		    <div class="tasks"><button class="rightButtons tasksButton" onclick="tasks()"><image class="sideIcon" src="assets\home.png"/>Tasks</button>
+		    </div>
+		    <div class="addNewList">
+		        <button class="list plusButton">+</button>
+		        <input class="list newListInput"  placeholder="New list"></input>
+		        <button class="addGroup"><image src="assets\add-user.png" class="createGroupImage"/></button>
+		    </div>
+		    <div class="bottomButtons">
+		        <button class="symbolButtons mail"><image class="bottomButtonImage" src="assets\email.png"></button>
+			<button class="symbolButtons calender"><image class="bottomButtonImage" src="assets\calendar.png"></button>
+			<button class="symbolButtons people"><image class="bottomButtonImage" src="assets\user1.png"></button>
+			<button class="symbolButtons file"><image class="bottomButtonImage" src="assets\attachment-clip.png"></button>
+			<button class="symbolButtons do"><image class="bottomButtonImage" src="assets\tick.png"></button>
+		    </div>
+		</div>
+		<div id="rightCorner">
+		    <div class="openMyDay">
+		        <div id="myDays"></div>
+			<div id="date"></div>
+			<div id="lines"></div>
+		    </div>
+		    <link rel="stylesheet" type="text/css" href="todosecond.css"></link>
+		    <div id="impotantPage"></div>
+		    <div id="plannedPage"></div>
+		    <div id="assignedPage"></div>
+		    <div id="taskPage"></div>
+		</div>
+	    </div>
+	</div>
+    </body>
+</html>
+	
