@@ -58,9 +58,14 @@ body {
   border-width: 0px;
   background-color: #CDD6F4;
   cursor: pointer;
+  padding-left:28px;
 }
 .searchBox:hover {
   background-color: #FFFF;
+}
+.searchImage {
+	width: 50px;
+	height:50px;
 }
 .searchBox:focus {
   background-color: #FFFF;
@@ -113,6 +118,8 @@ body {
   height: 528px;
   overflow: hidden;
   width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 .sideBar {
   height: 70px;
@@ -120,8 +127,8 @@ body {
 .sideBarButton {
   width: 25px;
   height: 25px;
-  margin-top: 20px;
-  margin-left: 30px;
+  margin-top: 5px;
+  margin-left: 14px;
   background: transparent;
   border-width: 0px;
   cursor: pointer;
@@ -141,37 +148,16 @@ body {
   border-width: 0px;
   cursor: pointer;
   text-align: left;
-  padding-left: 30px;
+  padding-left: 14px;
 }
 .rightButtons:hover {
   background-color: #F2F5FE;
-}
-.addNewList {
-  margin-top: 25px;
-  margin-left: 30px;
-  height: 20px;
-  display:flex;
-  flex-direction: row;
-}
-.plusButton {
-  height: 35px;
-  width: 30px;
-  background: transparent;
-  border-width: 0px;
-  color:  #4667DB;
-  font-size: 25px;
-}
-.newListInput {
-  width: 240px;
-  height: 30px;
-  border-width: 0px;
-  background:transparent;
 }
 ::placeholder {
   color: #4667DB;
   font-size: 15px;
 }
-.addGroup {
+#addGroup {
   width: 35px;
   height:35px;
   background:transparent;
@@ -184,7 +170,7 @@ body {
   margin: auto;
 }
  
-.addGroup:hover,.list:hover {
+#add-task:hover {
   background-color: #F2F5FE;
 }
 .sideIcon {
@@ -195,7 +181,7 @@ body {
 .bottomButtons {
   display: flex;
   flex-direction: row;
-  margin-top: 188px;
+  margin-top: 160px;
 }
 .symbolButtons {
   width: 80px;
@@ -206,10 +192,165 @@ body {
 }
  .symbolButtons:hover {
   background-color: #F2F5FE;
- }
- .bottomButtonImage {
+}
+.bottomButtonImage {
   width:40%;
   height:40%;
- }
 }
+ .rightCorner {
+  width: 70%;
+}
+#groupPlace {
+  width: 100%;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.leftClick {
+  width: 100%;
+  margin-left: 20px;
+  height: 70px;
+  padding: 20px;
+  font-size: 30px;
+}
+.line {
+  border-bottom: 1px solid #CDCACA;
+  margin-top:55px;
+  width:100%;
+ }
+#added-task {
+  width:230px;
+}
+#adding-task {
+  margin-left:14px;
+  background: transparent;
+  border-width: 0px;
+  color:  #4667DB;
+  font-size: 25px;
+  cursor: pointer;
+ }
+#new-list {
+  background:transparent;
+  width: 200px;
+  border-width: 0px;
+}
+#add-task {
+  width: 35px;
+  background:transparent;
+  border-width: 0px;
+  cursor: pointer;
+}
+#adding-task:hover {
+   background-color: #F2F5FE;
+}
+#new-list:hover {
+  background-color: #F2F5FE;
+}
+#added-task {
+  margin-left: 30px;
+}
+.insert {
+  display: flex;
+  flex-direction: row;
+  margin-top:40px
+}
+.my-class {
+  margin-top: 5px;
+  width: 200px;
+  font-size:15px;
+  color: #808B96;
+}
+.myDayDotButton{
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 5px;
+  background: transparent;
+  border-width: 0px;
+  cursor: pointer; 
+  width: 50px;
+  height: 30px;
+  font-size: 25px;
+} 
+.myDayDotButton:hover,.myDay-AddList:hover {
+  background-color: #E5E8E8 ;
+}  
+.taskBox {
+  margin-top:50px;
+  border-width: 0px;
+  width: 840px;
+  height: 20px;
+  content: 'Enter your number';
+  border-bottom: 1px solid #CDCACA;
+}
+.myDay-AddList {
+  background: transparent;
+  height: 26px;
+  cursor: pointer;
+  border-width: 0px;
+}
+.assigning-Image {
+  position:absolute;
+  margin-top: 140px;
+  width:200px;
+  margin-left: 150px;
+}
+.assign-text {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #767678;
+  font-family: 'Segoe UI', 'Segoe', 'Arial', 'sans-serif';
+  line-height: 28px;
+  width:300px;
+  margin-top: 300px;
+  margin-left: 275px; 
+}
+.left-collapsed {
+  display:none;
+  flex-direction:column;
+  background:#E6E9F2;
+  width:4%;
+  height:530px;
+  justify-content:space-between;
+}
+.sideIcons {
+  width:20px;
+  height: 20px;
+  margin:10px;
+}
+.openClick {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  background: transparent;
+  border-width: 0px;
+  cursor: pointer;
+  font-size: 25px;
+  color: #4667DB;
+}
+.searchImage {
+  height:20px;
+  width:20px;
+  position:absolute;
+  padding:5px;
+  margin-top:1px;
+}
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
   
