@@ -1,0 +1,366 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 576px;
+  width: 100%;
+}
+.top-bar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  border-spacing: 0;
+  white-space: nowrap;
+  line-height: normal;
+  background-color: #0078D7;
+}
+.office-button {
+  background: transparent;
+  border-width: 0;
+  width: 60px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  cursor: pointer;
+}
+.office-button:hover {
+  background-color: #2D3E75;
+  color: #FFFFFF;
+}
+.top-bar-images {
+  width: 50%;
+  height: 50%;
+  color: #FFFFFF;
+}
+.todo-button {
+  color: #FFFFFF;
+  background-color: #0078D7;
+  width: 50px;
+  text-align: middle;  
+  padding: 13px;
+  cursor: pointer;
+}
+.search {
+  margin-left:200px;
+  margin: auto;
+  display: block;  
+}
+.search-box {
+  height: 29px;
+  width: 350px;
+  border-radius: 3px;
+  border-width: 0px;
+  background-color: #CDD6F4;
+  cursor: pointer;
+  padding-left:28px;
+}
+.search-box:hover {
+  background-color: #FFFF;
+}
+.search-image {
+	width: 50px;
+	height:50px;
+  height:20px;
+  width:20px;
+  position:absolute;
+  padding:5px;
+  margin-top:1px;
+}
+.search-box:focus {
+  background-color: #FFFF;
+}
+.settings {
+  width: 50px;
+  background-color: #0078D7;
+  border-width: 0px;
+  cursor: pointer;
+}
+.help {
+  width: 50px;
+  background-color: #0078D7;
+  border-width: 0px;
+  cursor: pointer;
+}
+.new {
+  width: 50px;
+  background-color: #0078D7;
+  border-width: 0px;
+  cursor: pointer;
+}
+.sign-out {
+  width: 50px;
+  background-color: #0078D7;
+  cursor: pointer;
+}
+.sign-out-button {
+  margin-left: 5px;
+  margin-top: 5px;
+  border: 1px solid #FFFF;
+  color: #FFFF;
+  border-radius: 50%;
+  background-color: #0078D7;
+  cursor: pointer;
+  height: 38px;
+  width: 38px;
+  background: transparent;
+}
+.sign-out:hover,.new:hover,.help:hover,.settings:hover {
+  background-color: #2D3E75;
+  color: #FFFFFF;
+}
+.main-box {
+  display: flex;
+  flex-direction: row;
+}
+.menu-box {
+  background-color: #E6E9F2;
+  height: 540px;
+  overflow: hidden;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.toggle{
+  height: 70px;
+}
+.toggle-button {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 14px;
+  background: transparent;
+  border-width: 0px;
+  cursor: pointer;
+  font-size: 25px;
+  color: #4667DB;
+}
+.toggle-button:hover {
+  background-color: #C8CDDF;
+}
+.my-day {
+  width: 100%;
+}
+.left-bar-buttons {
+  width: 100%;
+  height: 35px;
+  background: transparent;
+  border-width: 0px;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 14px;
+  font-size: 13px;
+}
+.left-bar-buttons:hover {
+  background-color: #F2F5FE;
+}
+::placeholder {
+  color: #4667DB;
+  font-size: 15px;
+}
+.create-list {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+ 
+#add-task:hover {
+  background-color: #F2F5FE;
+}
+.side-icons {
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+}
+.menu-bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+}
+.left-bottom-buttons {
+  width: 80px;
+  height: 50px;
+  background: transparent;
+  border-width: 0px;
+  cursor: pointer;
+}
+ .left-bottom-buttons:hover {
+  background-color: #F2F5FE;
+}
+.bottom-buttons-image {
+  width:40%;
+  height:40%;
+}
+ .right-side-page {
+  width: 70%;
+}
+.page-header {
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 70px;
+  padding: 20px;
+  font-size: 30px;
+}
+#added-task {
+  width:230px;
+}
+#adding-task {
+  margin-left:14px;
+  background: transparent;
+  border-width: 0px;
+  color:  #4667DB;
+  font-size: 25px;
+  cursor: pointer;
+ }
+#new-list {
+  background:transparent;
+  width: 200px;
+  border-width: 0px;
+}
+#add-task {
+  width: 35px;
+  background:transparent;
+  border-width: 0px;
+  cursor: pointer;
+}
+#adding-task:hover {
+   background-color: #F2F5FE;
+}
+#new-list:hover {
+  background-color: #F2F5FE;
+}
+#added-task {
+  margin-left: 0px;
+  width: 100%;
+}
+.new-list-space {
+  display: flex;
+  flex-direction: row;
+  margin-top:40px
+}
+.my-class {
+  margin-top: 5px;
+  width: 200px;
+  font-size:15px;
+  color: #808B96;
+}
+.assigning-Image {
+  position:absolute;
+  margin-top: 140px;
+  width:200px;
+  margin-left: 150px;
+}
+.assign-text {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #767678;
+  font-family: 'Segoe UI', 'Segoe', 'Arial', 'sans-serif';
+  line-height: 28px;
+  width:300px;
+  margin-top: 300px;
+  margin-left: 275px; 
+}
+.left-collapsed {
+  display:none;
+  flex-direction:column;
+  background:#E6E9F2;
+  width:4%;
+  height:590px;
+  justify-content:space-between;
+}
+.left-bar-icons {
+  width:20px;
+  height: 20px;
+  margin:10px;
+}
+.left-bar-open {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  background: transparent;
+  border-width: 0px;
+  cursor: pointer;
+  font-size: 25px;
+  color: #4667DB;
+}
+.new-styling {
+  list-style-image: url("assets/list.png");
+  cursor: pointer;
+  padding:10px;
+  width: 100%;
+  background: transparent;
+  border-width: 0px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 15px;
+  padding-left: 14px;
+}
+.new-styling:hover {
+  background-color: #F2F5FE;
+}
+.task-add {
+  padding-left: 30px;
+}
+#add {
+  background: transparent;
+  height: 26px;
+  cursor: pointer;
+  border-width: 0px;
+  font-size: 20px;
+  color: #C8CDDF;
+}
+#add-task-box {
+  border-width: 0px;
+  width: 92%;
+  height: 20px;
+  border-bottom: 1px solid #CDCACA;
+  margin-top:40px;
+  margin-left: 30px;
+}
+.new-styles {
+  margin-top: 30px;
+  border-bottom: 1px solid #CDCACA;
+}
+.new-page {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+#left-bar {
+  height: 90%;
+}
+::marker {
+  margin-left: 20px;
+}
+#task-line {
+  border-bottom: 1px solid #CDCACA;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+.task-place {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+#list-delete-button {
+  margin-left: 10px;
+  border-width: 0px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+}
+#list-delete-button:hover {
+  background-color: #a8adb980;
+}
+.page-header-place {
+  margin-top: 35px;
+}
